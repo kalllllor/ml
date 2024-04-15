@@ -6,6 +6,16 @@ let skeleton;
 let brain;
 
 let state = "waiting";
+let targetLabel;
+
+function keyPressed() {
+  targetLabel = key;
+  console.log(targetLabel);
+  setTimeout(() => {
+    console.log("collecting");
+    state = "collecting";
+  }, 5000);
+}
 
 function setup() {
   createCanvas(640, 480);
