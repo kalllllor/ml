@@ -1,0 +1,19 @@
+canvas {
+  border: 1px solid red;
+}
+
+body {
+  position: relative;
+  video {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+  }
+
+  canvas {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 2;
+  }
+}
